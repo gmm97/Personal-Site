@@ -16,6 +16,10 @@ After that, access the .env file and change the following API_KEY to your own AP
 
 Do NOT use the same API key, it will fail when deployed to production.
 
+# Purpose Of Branch
+
+The dev-ts branch contains the migration to typescript and restructuring of the project. This branch will replace master when complete.
+
 # Future-Plans
 
 1. Add individual pages for projects
