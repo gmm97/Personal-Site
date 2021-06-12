@@ -28,9 +28,7 @@ const Contact = React.forwardRef<HTMLDivElement, ContactProps>((props, ref) => {
   const [selectedEmail, setSelectedEmail] = useState<String>(
     props.ContactInformation.PrimaryEmail
   );
-  const [selectedLanguage, setSelectedLanguage] = useState<String>(
-    props.TranslatedLanguages.English
-  );
+  const [selectedLanguage, setSelectedLanguage] = useState<String>("en");
 
   const changeEmail = (email: String): void => {
     setSelectedEmail(email);

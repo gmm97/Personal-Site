@@ -1,4 +1,3 @@
-import React from "react";
 import { TranslatedLanguages } from "./content";
 import { LanguageWrapper, LanguageComponent } from "./LanguagesStyles";
 
@@ -17,7 +16,9 @@ export const Languages = (props: LanguageProps) => {
             <LanguageComponent
               key={language}
               onClick={(e: any) => {
-                props.setSelectedLanguage((e.target as HTMLElement).innerText);
+                props.setSelectedLanguage(
+                  TranslatedLanguages[(e.target as HTMLElement).innerHTML]
+                );
               }}
               selectedLanguage={
                 props.selectedLanguage === TranslatedLanguages[language]
