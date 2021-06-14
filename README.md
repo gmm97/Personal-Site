@@ -16,12 +16,12 @@ After that, access the .env file and change the following API_KEY to your own AP
 
 Do NOT use the same API key, it will fail when deployed to production.
 
-# Purpose Of Branch
+Along with StyledComponents, Typescript is used to ensure type-checking on all components. If the code is customized, take extra care before editing TS interfaces as they may be used in several components in the Website.
 
-The dev-ts branch contains the migration to typescript and restructuring of the project. This branch will replace master when complete.
+# Customizing the Content
 
-# Future-Plans
+Will add in further details here after further re-arranging and re-factoring. For now, all the content.ts files in the folders contain the interfaces and objects. Editing the objects will change data displayed on the FE.
 
-1. Add individual pages for projects
-2. Add TS for type checking
-3. If needed, use Redux to handle global state in application
+# Current Advancements
+
+1. Add elaborations for the individual project pages
