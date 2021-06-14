@@ -22,6 +22,7 @@ export const SectionContentContainer = styled.div`
 
 export const SectionMainHeading = styled.div<AnimateWhenScrollPast>`
   margin-left: 2rem;
+  line-height: 3rem;
   margin-top: 2.5rem;
   padding-bottom: 1.6rem;
   text-transform: uppercase;

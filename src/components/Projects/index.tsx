@@ -7,12 +7,12 @@ import {
 } from "../ReusableComponents/styles";
 import { useScrollPast } from "../ReusableComponents/useScrollPast";
 import { CarouselComponent } from "./CustomCarousel";
-import { ProjectDescription, CarouselContent } from "./content";
+import { ProjectDescription, CarouselContentItem } from "./content";
 
 interface ProjectProps {
   ProjectDescription: ProjectDescription;
   height: number;
-  CarouselContent: CarouselContent;
+  CarouselContent: CarouselContentItem[];
 }
 
 const Projects = React.forwardRef<HTMLDivElement, ProjectProps>(

@@ -37,13 +37,14 @@ export const InputText = styled.textarea`
 
 export const StyledSubmitButton = styled.button`
   height: 2rem;
+  color: white;
   width: 8rem;
   margin: 1rem;
   border-radius: 2rem;
   margin-bottom: 2rem;
   font-size: 0.7rem;
-  background-color: #f8f8f8f8;
-  border: 1px solid teal;
+  background-color: teal;
+  border: 0.1px solid white;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   -webkit-appearance: button;

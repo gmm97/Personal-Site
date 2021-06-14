@@ -15,12 +15,20 @@ export interface CarouselContentItem {
   KeywordTags: String[];
   BackgroundImage: String;
   BriefDescription: String;
+  LinkName: String;
   Progress: "Completed" | "In Progress";
+  PageData: SeparateProjectPageDetails;
 }
 
-export interface CarouselContent extends Array<CarouselContentItem> {}
+interface SeparateProjectPageDetails {
+  TimeWorked: String;
+  About: String;
+  Tools: String;
+  ProjectDetails: String;
+  FurtherReading?: String;
+}
 
-export const CarouselContent: CarouselContent = [
+export const CarouselContent: CarouselContentItem[] = [
   {
     ProjectName:
       "Modelling market competition: Telecommunication companies in the US",
@@ -29,7 +37,16 @@ export const CarouselContent: CarouselContent = [
     BackgroundImage: "ParticleSwarm",
     BriefDescription:
       "Implementing Particle Swarm Optimization (PSO) in MATLAB to model market share dynamics in the US telecommunications industry",
+    LinkName: "particleswarm",
     Progress: "Completed",
+    PageData: {
+      TimeWorked: "Jan 2020 - May 2020",
+      About:
+        "Although differential equations have frequently been used to analyse biological systems and gain insight on population dynamics, their application in market research has been extremely limited. Nevertheless, market share data for firms in a concentrated market is readily available, and such markets tend to have high barriers to entry. Based on the market share data of previous years, this project aims to model the competitive landscape of the US telecommunications oligopoly using the 3-species Lotka-Voltera competitive differential equation system. After fitting a Particle Swarm model to the data, the project goes on to interpret the model equilibria using nullcline and simplex analysis.",
+      Tools: "The implementation of ",
+      ProjectDetails: "To be Written",
+      FurtherReading: "To be Written",
+    },
   },
 
   {
@@ -39,7 +56,15 @@ export const CarouselContent: CarouselContent = [
     BackgroundImage: "Database",
     BriefDescription:
       "Examining the role of database indexing on query planning and execution",
+    LinkName: "database",
     Progress: "Completed",
+    PageData: {
+      TimeWorked: "Jan 2021 - May 2021",
+      About: "To be Written",
+      Tools: "To be Written",
+      ProjectDetails: "To be Written",
+      FurtherReading: "To be Written",
+    },
   },
   {
     ProjectName: "Integrating memory networks into generative chatbots",
@@ -48,7 +73,15 @@ export const CarouselContent: CarouselContent = [
     BackgroundImage: "Chatbot",
     BriefDescription:
       "Designing and testing a small memory-network based chatbot",
+    LinkName: "chatbots",
     Progress: "Completed",
+    PageData: {
+      TimeWorked: "Jan 2021 - May 2021",
+      About: "To be Written",
+      Tools: "To be Written",
+      ProjectDetails: "To be Written",
+      FurtherReading: "To be Written",
+    },
   },
 
   {
@@ -58,7 +91,15 @@ export const CarouselContent: CarouselContent = [
     BackgroundImage: "Structure",
     BriefDescription:
       "Using structural equation models in R to predict organisational performance",
+    LinkName: "SEM",
     Progress: "Completed",
+    PageData: {
+      TimeWorked: "Jan 2021 - May 2021",
+      About: "To be Written",
+      Tools: "To be Written",
+      ProjectDetails: "To be Written",
+      FurtherReading: "To be Written",
+    },
   },
 
   {
@@ -75,7 +116,15 @@ export const CarouselContent: CarouselContent = [
     BackgroundImage: "Microservices",
     BriefDescription:
       "Designing and building a ticketing platform using Nodejs and React",
+    LinkName: "microservices",
     Progress: "Completed",
+    PageData: {
+      TimeWorked: "Jan 2021 - May 2021",
+      About: "To be Written",
+      Tools: "To be Written",
+      ProjectDetails: "To be Written",
+      FurtherReading: "To be Written",
+    },
   },
   {
     ProjectName: "Building a code execution platform in React & Typescript",
@@ -84,7 +133,15 @@ export const CarouselContent: CarouselContent = [
     BackgroundImage: "CodeExecution",
     BriefDescription:
       "Designing and building a ticketing platform using Nodejs and React",
+    LinkName: "codebook",
     Progress: "Completed",
+    PageData: {
+      TimeWorked: "Jan 2021 - May 2021",
+      About: "To be Written",
+      Tools: "To be Written",
+      ProjectDetails: "To be Written",
+      FurtherReading: "To be Written",
+    },
   },
   {
     ProjectName: "My Personal Website",
@@ -93,7 +150,15 @@ export const CarouselContent: CarouselContent = [
     BackgroundImage: "PersonalWebsite",
     BriefDescription:
       "Building my personal website using React Styled Components",
+    LinkName: "personal-site",
     Progress: "In Progress",
+    PageData: {
+      TimeWorked: "Jan 2021 - May 2021",
+      About: "To be Written",
+      Tools: "To be Written",
+      ProjectDetails: "To be Written",
+      FurtherReading: "To be Written",
+    },
   },
   {
     ProjectName: "Machine Learning for Heart Sound Classification",
@@ -102,7 +167,15 @@ export const CarouselContent: CarouselContent = [
     BackgroundImage: "Heartsound",
     BriefDescription:
       "Submitting a survey paper on Heart Sound Classification for publication",
+    LinkName: "heart-sound",
     Progress: "In Progress",
+    PageData: {
+      TimeWorked: "Jan 2021 - May 2021",
+      About: "To be Written",
+      Tools: "To be Written",
+      ProjectDetails: "To be Written",
+      FurtherReading: "To be Written",
+    },
   },
   {
     ProjectName: "Designing a Kalman Filter for Feedback Control Systems",
@@ -110,6 +183,14 @@ export const CarouselContent: CarouselContent = [
     KeywordTags: ["MATLAB", "Control Theory", "Modelling"],
     BackgroundImage: "Filter",
     BriefDescription: "Implementing and testing a Kalman Filter using MATLAB",
+    LinkName: "kalman-filter",
     Progress: "Completed",
+    PageData: {
+      TimeWorked: "Jan 2021 - May 2021",
+      About: "To be Written",
+      Tools: "To be Written",
+      ProjectDetails: "To be Written",
+      FurtherReading: "To be Written",
+    },
   },
 ];
