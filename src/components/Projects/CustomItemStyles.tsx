@@ -1,11 +1,13 @@
 import styled from "styled-components";
+import { Link as LinkR } from "react-router-dom";
 
 interface TagColor {
   progress: String;
 }
 
-export const CarouselItemWrapper = styled.div`
+export const CarouselItemWrapper = styled(LinkR)`
   height: 25rem;
+  text-decoration: none;
   .carousel-item & {
     width: 100%;
     display: flex;
@@ -34,6 +36,7 @@ export const ProjectName = styled.div`
   font-size: 0.7rem;
   line-height: 1rem;
   margin: 0.5rem;
+  color: #000;
   ${CarouselItemWrapper}:hover & {
     display: none;
   }
@@ -53,6 +56,7 @@ export const Description = styled.div`
     line-height: 1rem;
     display: block;
     margin: 1rem;
+    color: #000;
   }
 `;
 export const CarouselBody = styled.div`

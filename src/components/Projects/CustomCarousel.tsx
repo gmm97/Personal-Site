@@ -1,9 +1,8 @@
-import React from "react";
 import "react-multi-carousel/lib/styles.css";
 import { CarouselWrapper, StyledCarousel } from "./CustomCarouselStyles";
 import { StyledCarouselItem } from "./CustomItem";
 import key from "weak-key";
-import { CarouselContent, CarouselContentItem } from "./content";
+import { CarouselContentItem } from "./content";
 import { ResponsiveType } from "react-multi-carousel";
 
 const responsive: ResponsiveType = {
@@ -22,7 +21,7 @@ const responsive: ResponsiveType = {
 };
 
 interface CarouselContentProps {
-  CarouselContent: CarouselContent;
+  CarouselContent: CarouselContentItem[];
 }
 
 export const CarouselComponent = (props: CarouselContentProps) => {

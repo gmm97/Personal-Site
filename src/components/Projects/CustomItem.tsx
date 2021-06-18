@@ -19,7 +19,7 @@ interface StyledCarouselItemProps {
 
 export const StyledCarouselItem = (props: StyledCarouselItemProps) => {
   return (
-    <CarouselItemWrapper>
+    <CarouselItemWrapper to={`/project/${props.project.LinkName}`}>
       <CarouselBody>
         <KeywordTagContainer>
           {props.project.KeywordTags &&

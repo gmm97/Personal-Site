@@ -13,7 +13,7 @@ export const SidebarNavContainer = styled.div`
   top: 0;
   align-items: center;
   text-align: center;
-  background-image: linear-gradient(to bottom, #cfd9df, #e2ebf0);
+  background-image: linear-gradient(to right, #fdfbfb, #ebedee);
   @media screen and (max-width: 900px) {
     display: none;
   }
