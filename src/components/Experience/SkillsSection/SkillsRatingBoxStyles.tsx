@@ -1,8 +1,26 @@
 import styled from "styled-components";
+import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
+
+export const StyledBsArrowLeftShort = styled(BsArrowLeftShort)`
+  &:hover {
+    cursor: pointer;
+  }
+  align-self: center;
+`;
+
+export const StyledBsArrowRightShort = styled(BsArrowRightShort)`
+  &:hover {
+    cursor: pointer;
+  }
+  align-self: center;
+`;
+
 export const SkillContainer = styled.div`
   margin: 1rem 2rem;
   font-size: 0.85rem;
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
 `;
 export const SkillName = styled.div`
   margin-right: 1rem;
@@ -24,24 +42,36 @@ export const SkillBar = styled.div<SkillBarWidth>`
 `;
 
 export const Associated = styled.div`
-  margin-left: 3rem;
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: 50%;
+  text-align: center;
+  align-items: center;
 `;
 
 export const SkillBarWrapper = styled.div`
-  width: 16rem;
+  width: 20rem;
   border-radius: 4rem;
   height: 1rem;
 `;
 
 export const Project = styled.div`
-  text-transform: uppercase;
-  width: 100%;
-  font-size: 0.7rem;
+  height: 100%;
   &:hover {
     color: teal;
-    cursor: pointer;
   }
+  align-self: center;
+`;
+
+export const ProjectWrapper = styled.div`
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const ProjectItemWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  height: 1rem;
 `;

@@ -144,18 +144,31 @@ export const SkillsContent: SkillsContentItem[] = [
   {
     Skill: "Python",
     Capability: 90,
-    Projects: ["Project1", "Project2", "Project3"],
+    Projects: ["Pandas", "Data Structures", "Flask/Django", "NLP", "OpenCV"],
   },
-  { Skill: "TensorFlow", Capability: 80, Projects: ["Project1"] },
-  { Skill: "HTML/CSS/JS", Capability: 70, Projects: ["Project1"] },
-  { Skill: "Reactjs", Capability: 70, Projects: ["Project1"] },
-  { Skill: "Node/Express", Capability: 70, Projects: ["Project1"] },
-  { Skill: "AWS", Capability: 60, Projects: ["Project1"] },
-  { Skill: "SQL", Capability: 60, Projects: ["Project1"] },
-  { Skill: "SPSS", Capability: 50, Projects: ["Project1"] },
-  { Skill: "LaTeX", Capability: 70, Projects: ["Project1"] },
+  {
+    Skill: "TensorFlow",
+    Capability: 80,
+    Projects: ["Custom Model"],
+  },
+  { Skill: "HTML/CSS/JS", Capability: 70, Projects: ["SCSS"] },
+  {
+    Skill: "Reactjs",
+    Capability: 70,
+    Projects: ["Styled Components", "Redux", "Hooks", "NextJs"],
+  },
+  { Skill: "Typescript", Capability: 70, Projects: [] },
+  { Skill: "Node/Express", Capability: 70, Projects: [] },
+  {
+    Skill: "AWS",
+    Capability: 60,
+    Projects: ["Machine Learning", "Solutions Architect"],
+  },
+  { Skill: "SQL", Capability: 60, Projects: [] },
+  { Skill: "SPSS", Capability: 50, Projects: [] },
+  { Skill: "LaTeX", Capability: 70, Projects: [] },
   { Skill: "Figma/UI-UX", Capability: 50, Projects: ["Project1"] },
-  { Skill: "Databases", Capability: 60, Projects: ["Project1"] },
+  { Skill: "Databases", Capability: 60, Projects: ["PostgreSQL", "MongoDB"] },
 ];
 
 export interface VisibleCourseItem {

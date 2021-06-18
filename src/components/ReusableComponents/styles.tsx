@@ -33,7 +33,7 @@ export const SectionMainHeading = styled.div<AnimateWhenScrollPast>`
   animation: ${({ scrollPast }) =>
     scrollPast
       ? css`
-          4s ${toggleColor} ease-out 
+          2s ${toggleColor} ease-out 
         `
       : ""};
 `;

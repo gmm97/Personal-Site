@@ -33,7 +33,7 @@ export const StyledCarousel = styled(Carousel)`
   }
   & > ul.react-multi-carousel-dot-list > li.react-multi-carousel-dot--active {
     button {
-      background: teal;
+      background: #fadfda;
     }
   }
 `;
