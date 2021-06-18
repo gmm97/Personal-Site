@@ -19,8 +19,8 @@ export const DropdownContainer = styled.div`
 
 export const DropdownHeader = styled.div`
   margin-bottom: 0.8em;
-  width: 80%;
-  padding: 1em 0;
+  width: 60%;
+  padding: 0.6rem 1rem;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
   font-weight: 500;
   font-size: 0.7rem;
@@ -29,7 +29,7 @@ export const DropdownHeader = styled.div`
   border-radius: 1rem;
   cursor: pointer;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 `;
 
