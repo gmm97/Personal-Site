@@ -81,7 +81,7 @@ const Home = () => {
           payload: node!.offsetTop,
         });
       }
-    }, [target]);
+    }, [node]);
 
     useResizeObserver(target, (entry) => {
       refArray.map((ref, index) => {
