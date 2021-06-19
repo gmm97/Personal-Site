@@ -19,6 +19,9 @@ export const Author = styled.div`
   color: #fff;
   font-size: 1rem;
   margin-left: 1rem;
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
 `;
 
 export const NavMenu = styled.div`
