@@ -25,3 +25,6 @@ Will add in further details here after further re-arranging and re-factoring. Fo
 # Current Advancements
 
 1. Add elaborations for the individual project pages
+2. Add lazy loading for the project pages
+3. Add individual cards for all the skill components
+4. Use react markdown for writing all the content
