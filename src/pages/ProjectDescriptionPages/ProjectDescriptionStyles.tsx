@@ -4,7 +4,6 @@ import {
   SectionContentContainer,
   SectionMainHeading,
   SectionSubHeading,
-  SectionElaboration,
 } from "../../components/ReusableComponents/styles";
 
 export const ProjectContentContainer = styled(SectionContentContainer)`
@@ -13,20 +12,13 @@ export const ProjectContentContainer = styled(SectionContentContainer)`
 
 export const ProjectMainHeading = styled(SectionMainHeading)``;
 
-export const ProjectSubHeading = styled(SectionSubHeading)`
-  font-size: 0.9rem;
-  color: #fadfda;
-  &:hover {
-    color: teal;
-  }
-`;
-
 export const ProjectDateHeading = styled(SectionSubHeading)`
   margin-bottom: 0;
   margin-top: 1rem;
+  margin-left: 0;
+  text-align: center;
+  font-size: 0.85rem;
 `;
-
-export const ProjectElaboration = styled(SectionElaboration)``;
 
 export const ReturnMainPage = styled(LinkR)`
   height: 1rem;
@@ -40,17 +32,14 @@ export const ReturnMainPage = styled(LinkR)`
   &:hover {
     color: teal;
   }
-
   &:hover:after {
     right: -2rem;
     transition: right 0.3s ease-out;
   }
-
   &:hover:before {
     left: -2rem;
     transition: left 0.3s ease-out;
   }
-
   &:after {
     content: ">";
     height: 1rem;
@@ -63,4 +52,10 @@ export const ReturnMainPage = styled(LinkR)`
     position: absolute;
     left: -1rem;
   }
+`;
+
+export const MarkdownWrapper = styled.div`
+  margin-left: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 `;

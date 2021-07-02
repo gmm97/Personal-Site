@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import {
   InputsWrapper,
+  SubmitButtonText,
   SendingToWrapper,
   MessageWrapper,
   InputText,
@@ -11,6 +12,8 @@ import {
   ErrorDisplay,
 } from "./SendMessageStyles";
 import axios, { AxiosError, AxiosResponse } from "axios";
+import { RiSendPlaneLine } from "react-icons/ri";
+
 var qs = require("qs");
 
 interface SendMessageProps {
@@ -107,7 +110,8 @@ export const SendMessageContainer = (props: SendMessageProps) => {
         />
       </MessageWrapper>
       <StyledSubmitButton onClick={makeRequest}>
-        Send an Email!
+        <SubmitButtonText>Send</SubmitButtonText>
+        <RiSendPlaneLine />
       </StyledSubmitButton>
       {error && <ErrorDisplay>{error}</ErrorDisplay>}
     </InputsWrapper>

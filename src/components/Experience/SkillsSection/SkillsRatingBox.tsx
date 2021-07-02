@@ -60,7 +60,6 @@ export const SkillsRatingBox = (props: SkillsRatingBoxProps) => {
         <SkillBarWrapper>
           <SkillBar Capability={props.SkillsContentItem.Capability} />
         </SkillBarWrapper>
-        {/* {renderProject(projectLength)} */}
       </SkillContainer>
     </IconContext.Provider>
   );
