@@ -22,10 +22,6 @@ export interface CarouselContentItem {
 
 interface SeparateProjectPageDetails {
   TimeWorked: String;
-  About: String;
-  Tools: String;
-  ProjectDetails: String;
-  FurtherReading?: String;
 }
 
 export const CarouselContent: CarouselContentItem[] = [
@@ -41,11 +37,6 @@ export const CarouselContent: CarouselContentItem[] = [
     Progress: "Completed",
     PageData: {
       TimeWorked: "Jan 2020 - May 2020",
-      About:
-        "Although differential equations have frequently been used to analyse biological systems and gain insight on population dynamics, their application in market research has been extremely limited. Nevertheless, market share data for firms in a concentrated market is readily available, and such markets tend to have high barriers to entry. Based on the market share data of previous years, this project aims to model the competitive landscape of the US telecommunications oligopoly using the 3-species Lotka-Voltera competitive differential equation system. After fitting a Particle Swarm model to the data, the project goes on to interpret the model equilibria using nullcline and simplex analysis.",
-      Tools: "The implementation of ",
-      ProjectDetails: "To be Written",
-      FurtherReading: "To be Written",
     },
   },
 
@@ -60,10 +51,6 @@ export const CarouselContent: CarouselContentItem[] = [
     Progress: "Completed",
     PageData: {
       TimeWorked: "Jan 2021 - May 2021",
-      About: "To be Written",
-      Tools: "To be Written",
-      ProjectDetails: "To be Written",
-      FurtherReading: "To be Written",
     },
   },
   {
@@ -77,10 +64,6 @@ export const CarouselContent: CarouselContentItem[] = [
     Progress: "Completed",
     PageData: {
       TimeWorked: "Jan 2021 - May 2021",
-      About: "To be Written",
-      Tools: "To be Written",
-      ProjectDetails: "To be Written",
-      FurtherReading: "To be Written",
     },
   },
 
@@ -95,10 +78,6 @@ export const CarouselContent: CarouselContentItem[] = [
     Progress: "Completed",
     PageData: {
       TimeWorked: "Jan 2021 - May 2021",
-      About: "To be Written",
-      Tools: "To be Written",
-      ProjectDetails: "To be Written",
-      FurtherReading: "To be Written",
     },
   },
 
@@ -120,10 +99,6 @@ export const CarouselContent: CarouselContentItem[] = [
     Progress: "Completed",
     PageData: {
       TimeWorked: "Jan 2021 - May 2021",
-      About: "To be Written",
-      Tools: "To be Written",
-      ProjectDetails: "To be Written",
-      FurtherReading: "To be Written",
     },
   },
   {
@@ -137,10 +112,6 @@ export const CarouselContent: CarouselContentItem[] = [
     Progress: "Completed",
     PageData: {
       TimeWorked: "Jan 2021 - May 2021",
-      About: "To be Written",
-      Tools: "To be Written",
-      ProjectDetails: "To be Written",
-      FurtherReading: "To be Written",
     },
   },
   {
@@ -154,10 +125,6 @@ export const CarouselContent: CarouselContentItem[] = [
     Progress: "In Progress",
     PageData: {
       TimeWorked: "Jan 2021 - May 2021",
-      About: "To be Written",
-      Tools: "To be Written",
-      ProjectDetails: "To be Written",
-      FurtherReading: "To be Written",
     },
   },
   {
@@ -171,10 +138,6 @@ export const CarouselContent: CarouselContentItem[] = [
     Progress: "In Progress",
     PageData: {
       TimeWorked: "Jan 2021 - May 2021",
-      About: "To be Written",
-      Tools: "To be Written",
-      ProjectDetails: "To be Written",
-      FurtherReading: "To be Written",
     },
   },
   {
@@ -187,10 +150,6 @@ export const CarouselContent: CarouselContentItem[] = [
     Progress: "Completed",
     PageData: {
       TimeWorked: "Jan 2021 - May 2021",
-      About: "To be Written",
-      Tools: "To be Written",
-      ProjectDetails: "To be Written",
-      FurtherReading: "To be Written",
     },
   },
 ];
