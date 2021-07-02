@@ -36,17 +36,24 @@ export const InputText = styled.textarea`
 `;
 
 export const StyledSubmitButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 2rem;
-  color: white;
   width: 8rem;
   margin: 1rem;
   border-radius: 2rem;
   margin-bottom: 2rem;
-  font-size: 0.7rem;
-  background-color: teal;
-  border: 0.1px solid white;
+  font-size: 0.85rem;
+  background-color: #e2ebf0;
+  border: none;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
   cursor: pointer;
+  opacity: 0.7;
+  &:hover {
+    transition: opacity 1s ease-out;
+    opacity: 1;
+  }
   -webkit-appearance: button;
   &:active {
     transform: translateY(-0.1rem);
@@ -67,4 +74,8 @@ export const ErrorDisplay = styled.div`
   margin-bottom: 2rem;
   font-size: 0.7rem;
   text-transform: uppercase;
+`;
+
+export const SubmitButtonText = styled.p`
+  margin-right: 1rem;
 `;
