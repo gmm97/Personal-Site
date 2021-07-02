@@ -34,11 +34,8 @@ export const ProjectPage = (props: ProjectPageItem) => {
 
       setCurrentMarkdown(markdownText);
     };
-
     fetchMarkdown();
   }, []);
-
-  //console.log(currentMarkdown);
 
   return (
     <ProjectContentContainer>
