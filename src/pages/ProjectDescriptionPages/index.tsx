@@ -1,29 +1,33 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { Switch, Route, useRouteMatch } from "react-router";
 import {
   CarouselContent,
   CarouselContentItem,
 } from "../../components/Projects/content";
-import { ProjectPage } from "./ProjectPage";
+import Spinner from "../../components/ReusableComponents/LoadingSpinner";
 import key from "weak-key";
+
+const ProjectPage = lazy(() => import("./ProjectPage"));
 
 const ProjectNavigation = () => {
   const { path } = useRouteMatch();
   return (
     <React.Fragment>
-      <Switch>
-        {CarouselContent &&
-          CarouselContent.map((CarouselContentItem: CarouselContentItem) => {
-            return (
-              <Route
-                key={key(CarouselContentItem)}
-                path={`${path}/${CarouselContentItem.LinkName}`}
-              >
-                <ProjectPage CarouselContentItem={CarouselContentItem} />
-              </Route>
-            );
-          })}
-      </Switch>
+      <Suspense fallback={<Spinner />}>
+        <Switch>
+          {CarouselContent &&
+            CarouselContent.map((CarouselContentItem: CarouselContentItem) => {
+              return (
+                <Route
+                  key={key(CarouselContentItem)}
+                  path={`${path}/${CarouselContentItem.LinkName}`}
+                >
+                  <ProjectPage CarouselContentItem={CarouselContentItem} />
+                </Route>
+              );
+            })}
+        </Switch>
+      </Suspense>
     </React.Fragment>
   );
 };

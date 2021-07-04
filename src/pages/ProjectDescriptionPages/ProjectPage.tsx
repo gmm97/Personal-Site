@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { CarouselContentItem } from "../../components/Projects/content";
+import Spinner from "../../components/ReusableComponents/LoadingSpinner";
 import {
   ProjectContentContainer,
   ProjectMainHeading,
@@ -8,16 +9,39 @@ import {
   MarkdownWrapper,
 } from "./ProjectDescriptionStyles";
 import ReactMarkdown from "react-markdown";
+import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
+import materialLight from "react-syntax-highlighter/dist/cjs/styles/prism/material-light";
+import jsx from "react-syntax-highlighter/dist/esm/languages/prism/jsx";
+import tsx from "react-syntax-highlighter/dist/esm/languages/prism/typescript";
+
+SyntaxHighlighter.registerLanguage("jsx", jsx);
+SyntaxHighlighter.registerLanguage("tsx", tsx);
 
 interface ProjectPageItem {
   CarouselContentItem: CarouselContentItem;
 }
 
-export const ProjectPage = (props: ProjectPageItem) => {
+const ProjectPage = (props: ProjectPageItem) => {
   const [currentMarkdown, setCurrentMarkdown] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
   const projectEntry = props.CarouselContentItem;
 
+  const customRenderers = {
+    code(code: any) {
+      const { className, children } = code;
+      const language = className.split("-")[1];
+      return (
+        <SyntaxHighlighter
+          language={language}
+          children={children}
+          style={materialLight}
+        />
+      );
+    },
+  };
+
   useEffect(() => {
+    setIsLoading(true);
     let linkName = projectEntry.LinkName;
 
     const fetchMarkdown = async () => {
@@ -35,6 +59,8 @@ export const ProjectPage = (props: ProjectPageItem) => {
       setCurrentMarkdown(markdownText);
     };
     fetchMarkdown();
+    setIsLoading(false);
+    return () => setIsLoading(true);
   }, []);
 
   return (
@@ -46,7 +72,11 @@ export const ProjectPage = (props: ProjectPageItem) => {
         {projectEntry.PageData.TimeWorked}
       </ProjectDateHeading>
       <MarkdownWrapper>
-        <ReactMarkdown children={currentMarkdown} />
+        {isLoading && <Spinner />}
+        <ReactMarkdown
+          children={currentMarkdown}
+          components={customRenderers}
+        />
       </MarkdownWrapper>
       <ReturnMainPage to={"/"}>Return to Home Page</ReturnMainPage>
     </ProjectContentContainer>

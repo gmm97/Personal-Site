@@ -1,9 +1,11 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import ProjectNavigation from "./pages/ProjectDescriptionPages";
 import GlobalStyle from "./globalstyles/globalstyles";
 import ScrollRestoration from "react-scroll-restoration";
+import Spinner from "./components/ReusableComponents/LoadingSpinner";
+
+const ProjectNavigation = lazy(() => import("./pages/ProjectDescriptionPages"));
 
 function App() {
   return (
@@ -11,12 +13,12 @@ function App() {
       <GlobalStyle />
       <BrowserRouter>
         <ScrollRestoration />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/project">
-            <ProjectNavigation />
-          </Route>
-        </Switch>
+        <Suspense fallback={<Spinner />}>
+          <Switch>
+            <Route path="/" exact component={Home} />
+            <Route path="/project" component={ProjectNavigation} />
+          </Switch>
+        </Suspense>
       </BrowserRouter>
     </React.Fragment>
   );
