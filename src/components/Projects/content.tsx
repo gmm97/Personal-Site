@@ -63,7 +63,7 @@ export const CarouselContent: CarouselContentItem[] = [
     LinkName: "chatbots",
     Progress: "Completed",
     PageData: {
-      TimeWorked: "Jan 2021 - May 2021",
+      TimeWorked: "May 2020 - Aug 2020",
     },
   },
 
@@ -77,15 +77,15 @@ export const CarouselContent: CarouselContentItem[] = [
     LinkName: "SEM",
     Progress: "Completed",
     PageData: {
-      TimeWorked: "Jan 2021 - May 2021",
+      TimeWorked: "Apr 2020 - Sep 2020",
     },
   },
 
   {
     ProjectName: "Microservices with Nodejs and React",
-    Organisation: "Udemy - Microservices",
+    Organisation: "-",
     KeywordTags: [
-      "React",
+      "React (Next.js)",
       "Nodejs",
       "Typescript",
       "Node-Nats-Streaming",
@@ -94,9 +94,9 @@ export const CarouselContent: CarouselContentItem[] = [
     ],
     BackgroundImage: "Microservices",
     BriefDescription:
-      "Designing and building a ticketing platform using Nodejs and React",
+      "Designing and building a e-commerce platform using Nodejs and Next.js",
     LinkName: "microservices",
-    Progress: "Completed",
+    Progress: "In Progress",
     PageData: {
       TimeWorked: "Jan 2021 - May 2021",
     },
@@ -124,7 +124,7 @@ export const CarouselContent: CarouselContentItem[] = [
     LinkName: "personal-site",
     Progress: "In Progress",
     PageData: {
-      TimeWorked: "Jan 2021 - May 2021",
+      TimeWorked: "May 2021 - Jul 2021",
     },
   },
   {
@@ -149,7 +149,7 @@ export const CarouselContent: CarouselContentItem[] = [
     LinkName: "kalman-filter",
     Progress: "Completed",
     PageData: {
-      TimeWorked: "Jan 2021 - May 2021",
+      TimeWorked: "Aug 2020 - Dec 2020",
     },
   },
 ];
