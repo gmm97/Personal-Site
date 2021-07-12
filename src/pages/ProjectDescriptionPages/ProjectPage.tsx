@@ -7,6 +7,7 @@ import {
   ReturnMainPage,
   ProjectDateHeading,
   MarkdownWrapper,
+  StyledMarkdown,
 } from "./ProjectDescriptionStyles";
 import ReactMarkdown from "react-markdown";
 import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -73,7 +74,7 @@ const ProjectPage = (props: ProjectPageItem) => {
       </ProjectDateHeading>
       <MarkdownWrapper>
         {isLoading && <Spinner />}
-        <ReactMarkdown
+        <StyledMarkdown
           children={currentMarkdown}
           components={customRenderers}
         />

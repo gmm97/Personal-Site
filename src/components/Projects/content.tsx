@@ -116,7 +116,7 @@ export const CarouselContent: CarouselContentItem[] = [
   },
   {
     ProjectName: "My Personal Website",
-    Organisation: "Independent",
+    Organisation: "-",
     KeywordTags: ["React", "Styled Components"],
     BackgroundImage: "PersonalWebsite",
     BriefDescription:
