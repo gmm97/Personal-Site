@@ -6,6 +6,22 @@ import {
   SectionSubHeading,
 } from "../../components/ReusableComponents/styles";
 import Background from "../../images/so-white.png";
+import ReactMarkdown from "react-markdown";
+
+export const StyledMarkdown = styled(ReactMarkdown)`
+  font-size: 1rem;
+
+  & img {
+    height: 24%;
+    width: 60%;
+    margin: 1rem;
+  }
+`;
+
+export const MarkdownImage = styled.div`
+  width: 30rem;
+  height: 30rem;
+`;
 
 export const ProjectContentContainer = styled(SectionContentContainer)`
   background-image: url(${Background});
