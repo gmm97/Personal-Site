@@ -2,7 +2,7 @@
 
 Well, I would post a link to this site but that would be a bit pointless, right?
 
-Anyways, I've had some experience in making traditional websites with HTML, CSS and plain Javascript before. But it isn't just that ReactJs is way easier to get a handle on (it is, by the way), and it isn't really about terms like the _virtual dom_ that people keep throwing around either. I find React amazing because of how _easy_ it makes your life! Specifically, with regards to the following:
+Anyways, I've had some experience in making traditional websites with HTML, CSS and plain Javascript before, but I wanted to find out why React is so popular among front-end developers. All those terms like the _virtual dom_ that people kept throwing around didn't help me understand the power of React one bit! After developing this website (and some other projects) using React, I can confidently say that I find React amazing because of how _easy_ it makes life! Specifically, with regards to the following:
 
 - It is _so_ much easier to structure your files. React works with rendering JSX components on the screen - JSX is "Javascript React", a blend of HTML and Javascript arranged into components which you render onto the screen. This ensures you don't normally run into the problem with poorly-structured code causing your HTML elements to be affected by different chunks of vanilla Javascript from different files. You lose a bit of flexibility in the way you can structure your projects, but you gain so much peace of mind knowing that everything you need is right in front of you :)
 
@@ -22,10 +22,9 @@ Remember how I mentioned how much I loved that React combines both HTML and JS i
 
 ### React Markdown
 
-I chose to use React Markdown to write all these simple project pages since it allows you to format your text, lists, images and lists in a simple manner. In fact, writing all these pages in markdown allowed me to do away with all the <p> and <a> tags and formatting issues I would have faced otherwise. It also comes with a lot of cool plugins such as React SyntaxHighlighter, which allows you to perform syntax highlighting of code snippets you wish to include. Furthermore, it's also really easy to use and very plug-and-play. To get all these project pages working, I used React lazy loading to dynamically import the markdown component and show it to you. Try refreshing this page and you'll see a slight pause before the markdown is rendered (which I aim to get around to fixing by adding a fallback component, by the way). Anyways, here's the code I used to show the markdown component on the screen:
+I chose to use React Markdown to write all these simple project pages since it allows you to format your text, images and lists in a simple manner. In fact, writing all these pages in markdown allowed me to do away with all the <p> and <a> tags and formatting issues I would have faced otherwise. It also comes with a lot of cool plugins such as React SyntaxHighlighter, which allows you to perform syntax highlighting of code snippets you wish to include. Furthermore, it's also really easy to use and very plug-and-play. To get all these project pages working, I used React lazy loading to dynamically import the markdown component and show it to you. Try refreshing this page (don't press the back button) and you'll see a slight pause before the markdown is rendered (I added a blue spinner to make it look more presentable). Anyways, here's the code I used to show the markdown component on the screen:
 
 ```jsx
-
 // Other imports
 ...
 import ReactMarkdown from "react-markdown";
@@ -79,22 +78,22 @@ Really easy, right? You can check out my [GitHub](https://github.com/gmm97/Perso
 
 ### TypeScript
 
-TypeScript is a JS library which allows us to implement static typing in JS (and by extension, React). When we pass down props from one component to another in JS or invoke functions, it is extremely likely that we may make a spelling error or pass down an incorrect argument somewhere. Typescript aims to prevent this by performing static type checking at compile time (not run time); all our type checking is eliminated upon compilation and the typescript compiler (tsc) just spits out plain old javascript. This doesn't just work for our own code; in fact, most npm libraries have included type definition files which will check that we aren't accidentally referencing a property on an object which doesn't exist. How useful is that?
+TypeScript is a JS library which allows us to implement static typing in JS (and by extension, React). When we pass down props from one component to another in JS or invoke functions, it is extremely likely that we may make a spelling error or pass down an incorrect argument somewhere. Typescript aims to prevent this by performing static type checking at compile time (not run time); all our type checking is eliminated upon compilation and the typescript compiler (tsc) just spits out plain old javascript. This doesn't just work for our own code; in fact, most npm libraries have included type definition files which will check that we aren't accidentally referencing a property on an object which doesn't exist. How useful is that!
 
 Still not convinced? Let's take a look at a simple example of when TS came in really useful in making this website! If you go back to the main page and reload the website, you'll see a lovely pink animation on the headers as you scroll past. Obviously, since this is a responsive website, the position of the headers on each page may change as you adjust the height of the components such as the timeline. I therefore needed to listen for any resize events _after_ the initial render as well, and I used the _useReducer_ hook to keep track of the location of the headers in each component:
 
-```tsx
+```jsx
 export type ActionTypes =
-  | { type: "about"; payload: number }
-  | { type: "work"; payload: number }
-  | { type: "projects"; payload: number }
-  | { type: "contact"; payload: number }
-  | { type: "bottom"; payload: number };
+  | { type: "about", payload: number }
+  | { type: "work", payload: number }
+  | { type: "projects", payload: number }
+  | { type: "contact", payload: number }
+  | { type: "bottom", payload: number };
 ```
 
 The type above just corresponds to the name of the section, while the payload is the distance of the header from the top of the page. Going now to our useReducer hook:
 
-```tsx
+```jsx
 const reducer = (state: ReducerState, action: ActionTypes): ReducerState => {
   switch (action.type) {
     case "about":
