@@ -63,7 +63,7 @@ export const CarouselBody = styled.div`
   width: 90%;
   height: 90%;
   border: solid 1px #fadfda;
-  background-color: #f8f8f8f8;
+  background-color: #fff;
   position: relative;
   display: flex;
   flex-direction: column;

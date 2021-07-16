@@ -103,7 +103,7 @@ export const CarouselContent: CarouselContentItem[] = [
   },
   {
     ProjectName: "Building a code execution platform in React & Typescript",
-    Organisation: "Udemy - React & Typescript",
+    Organisation: "-",
     KeywordTags: ["React", "Typescript", "Lerna", "NPM"],
     BackgroundImage: "CodeExecution",
     BriefDescription:
@@ -150,6 +150,19 @@ export const CarouselContent: CarouselContentItem[] = [
     Progress: "Completed",
     PageData: {
       TimeWorked: "Aug 2020 - Dec 2020",
+    },
+  },
+  {
+    ProjectName: "MITRE Att&CK - Detecting Cybersecurity Threats",
+    Organisation: "Singtel-NUS Cybersecurity Research Lab",
+    KeywordTags: ["Python", "Machine Learning", "Modelling"],
+    BackgroundImage: "Attack",
+    BriefDescription:
+      "Training, testing and deploying NLP models for threat classification",
+    LinkName: "mitre-attack",
+    Progress: "In Progress",
+    PageData: {
+      TimeWorked: "May 2021 - Aug 2021",
     },
   },
 ];
