@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
 export const SkillSectionWrapper = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  position: relative;
-  @media screen and (max-width: 1450px) {
-    grid-template-columns: 1fr;
-  }
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+`;
+
+export const SectionWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
 `;

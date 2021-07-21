@@ -1,77 +1,71 @@
-import styled from "styled-components";
-import { BsArrowLeftShort, BsArrowRightShort } from "react-icons/bs";
+import styled, { keyframes, css } from "styled-components";
 
-export const StyledBsArrowLeftShort = styled(BsArrowLeftShort)`
-  &:hover {
-    cursor: pointer;
+const toggleColor = keyframes`
+  0% {
+    opacity: 1;
   }
-  align-self: center;
-`;
 
-export const StyledBsArrowRightShort = styled(BsArrowRightShort)`
-  &:hover {
-    cursor: pointer;
+  50% {
+    opacity: 0.8;
   }
-  align-self: center;
+
+  100% {
+    opacity: 1;
+  }
 `;
 
-export const SkillContainer = styled.div`
-  margin: 1rem 2rem;
-  font-size: 0.85rem;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-`;
-export const SkillName = styled.div`
-  margin-right: 1rem;
-  width: 8rem;
-`;
-
-interface SkillBarWidth {
-  Capability: number;
+interface capabilityProps {
+  capability: number;
 }
 
-export const SkillBar = styled.div<SkillBarWidth>`
-  border-radius: inherit;
-  background-color: #fadfda;
-  height: 100%;
-  width: ${({ Capability }) => Capability + "%"};
-  &:hover {
-    background-color: teal;
+export const FrameworkWrapper = styled.div<capabilityProps>`
+  color: ${({ capability }) => {
+    if (capability >= 80) {
+      return "#3CB371";
+    } else if (capability >= 50) {
+      return "#FFD700";
+    } else {
+      return "#FF7F50";
+    }
+  }};
+  margin: 1rem;
+  @media only screen and (max-width: 700px) {
+    margin: 0.5rem;
   }
 `;
 
-export const Associated = styled.div`
+export const FrameworkComponentWrapper = styled.div`
   display: flex;
+  margin-left: 2rem;
+  margin-right: 2rem;
   justify-content: space-between;
-  width: 50%;
-  text-align: center;
-  align-items: center;
+  font-size: 0.8rem;
+  margin: 0.5rem;
 `;
 
-export const SkillBarWrapper = styled.div`
-  width: 20rem;
-  border-radius: 4rem;
-  height: 1rem;
-`;
-
-export const Project = styled.div`
-  height: 100%;
-  &:hover {
-    color: teal;
+export const SkillName = styled.div`
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  &::before,
+  &::after {
+    content: "---";
+    margin: auto;
+    width: 3rem;
   }
-  align-self: center;
+  &::before {
+    margin-right: 1rem;
+  }
+  &::after {
+    margin-left: 1rem;
+  }
+  color: #ffb6c1;
+  animation: ${toggleColor} 1s ease-in-out infinite;
 `;
 
-export const ProjectWrapper = styled.div`
-  width: 40%;
+export const SkillAndFrameworkWrapper = styled.div`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-`;
-
-export const ProjectItemWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  height: 1rem;
 `;

@@ -9,14 +9,15 @@ import {
   MarkdownWrapper,
   StyledMarkdown,
 } from "./ProjectDescriptionStyles";
-import ReactMarkdown from "react-markdown";
 import { PrismLight as SyntaxHighlighter } from "react-syntax-highlighter";
 import materialLight from "react-syntax-highlighter/dist/cjs/styles/prism/material-light";
 import jsx from "react-syntax-highlighter/dist/esm/languages/prism/jsx";
-import tsx from "react-syntax-highlighter/dist/esm/languages/prism/typescript";
+import yaml from "react-syntax-highlighter/dist/esm/languages/prism/yaml";
+import typescript from "react-syntax-highlighter/dist/esm/languages/prism/typescript";
 
 SyntaxHighlighter.registerLanguage("jsx", jsx);
-SyntaxHighlighter.registerLanguage("tsx", tsx);
+SyntaxHighlighter.registerLanguage("yaml", yaml);
+SyntaxHighlighter.registerLanguage("typescript", typescript);
 
 interface ProjectPageItem {
   CarouselContentItem: CarouselContentItem;
@@ -62,7 +63,7 @@ const ProjectPage = (props: ProjectPageItem) => {
     fetchMarkdown();
     setIsLoading(false);
     return () => setIsLoading(true);
-  }, []);
+  }, [projectEntry.LinkName]);
 
   return (
     <ProjectContentContainer>
