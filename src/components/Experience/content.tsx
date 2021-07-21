@@ -11,10 +11,10 @@ export const WorkExperienceData: WorkExperienceItem[] = [
     Date: "May 2021 - Present",
     Role: "Machine Learning Developer / Research Assistant",
     Details: [
-      "Assigned as a developer to a project focused on attributing Advanced Persistent Threats (APT's) to specific APT groups",
-      "Tasked with building machine learning frameworks for feature extraction from unstructured JSON logs",
-      "As part of the framework, developing a proof-of-concept for training RNN prediction models on synthesised time-series data",
-      "Working on deployment of machine learning frameworks in a production setting",
+      "Working as part of a research team focusing on attributing Advanced Persistent Threats (APT's) to a specific APT group",
+      "Tasked with building machine learning frameworks for feature extraction from unstructured MITRE technique descriptions",
+      "Developing a proof-of-concept for training sentence transformer models on unstructured data for multi-label classification tasks",
+      "Working on integrating complex machine learning frameworks for end-to-end inference in a complex framework",
     ],
   },
   {
@@ -25,6 +25,7 @@ export const WorkExperienceData: WorkExperienceItem[] = [
       "Assigned to a team involved in designing database schemas and database ingestion for real-time data analytics",
       "Working with developers to reduce query time from Data Warehouses using Apache Druid",
       "Modifying UI components of internal data systems for improved user interaction",
+      "Using Figma to design the User Interface (UI) for internal tools",
     ],
   },
   {
@@ -136,7 +137,7 @@ export const ActivitiesData: ActivitiesItem[] = [
 
 export interface SkillsContentItem {
   Skill: string;
-  Frameworks?: { name: string; capability: number }[];
+  Frameworks: { name: string; capability: number }[];
 }
 
 export const SkillsContent: SkillsContentItem[] = [
@@ -164,7 +165,7 @@ export const SkillsContent: SkillsContentItem[] = [
         capability: 80,
       },
       {
-        name: "NLP Toolkits",
+        name: "NLP Toolkits (spaCy etc)",
         capability: 70,
       },
     ],

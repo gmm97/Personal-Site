@@ -12,6 +12,9 @@ interface SkillsRatingBoxProps {
 }
 
 export const SkillsRatingBox = (props: SkillsRatingBoxProps) => {
+  props.SkillsContentItem.Frameworks.sort(function (a, b) {
+    return b.capability - a.capability;
+  });
   return (
     <SkillAndFrameworkWrapper>
       <SkillName>{props.SkillsContentItem.Skill}</SkillName>
