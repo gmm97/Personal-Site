@@ -28,6 +28,7 @@ import {
   WorkExperienceData,
 } from "./content";
 import { CourseDescription } from "./CourseSection/content";
+import { SkillsDescription } from "./SkillsSection/content";
 
 interface ExperienceProps {
   height: number;
@@ -99,7 +100,10 @@ const Experience = React.forwardRef<HTMLDivElement, ExperienceProps>(
           </MainSection>
           <MainSection id="skills">
             <ResumeSectionHeader>Skills</ResumeSectionHeader>
-            <SkillsResumeSection SkillsContent={SkillsContent} />
+            <SkillsResumeSection
+              SkillsContent={SkillsContent}
+              SkillsDescription={SkillsDescription}
+            />
           </MainSection>
           <MainSection id="courses">
             <ResumeSectionHeader>Courses</ResumeSectionHeader>

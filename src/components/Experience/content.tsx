@@ -136,39 +136,128 @@ export const ActivitiesData: ActivitiesItem[] = [
 
 export interface SkillsContentItem {
   Skill: string;
-  Capability: number;
-  Projects?: string[];
+  Frameworks?: { name: string; capability: number }[];
 }
 
 export const SkillsContent: SkillsContentItem[] = [
   {
     Skill: "Python",
-    Capability: 90,
-    Projects: ["Pandas", "Data Structures", "Flask/Django", "NLP", "OpenCV"],
+    Frameworks: [
+      {
+        name: "Pandas",
+        capability: 70,
+      },
+      {
+        name: "Data Structures",
+        capability: 80,
+      },
+      {
+        name: "Flask/ Django",
+        capability: 40,
+      },
+      {
+        name: "TensorFlow",
+        capability: 80,
+      },
+      {
+        name: "Machine Learning Libraries",
+        capability: 80,
+      },
+      {
+        name: "NLP Toolkits",
+        capability: 70,
+      },
+    ],
   },
   {
-    Skill: "TensorFlow",
-    Capability: 80,
-    Projects: ["Custom Model"],
+    Skill: "Javascript",
+    Frameworks: [
+      {
+        name: "Reactjs (Nextjs / Redux etc)",
+        capability: 80,
+      },
+      {
+        name: "Nodejs",
+        capability: 80,
+      },
+      {
+        name: "Typescript",
+        capability: 80,
+      },
+    ],
   },
-  { Skill: "HTML/CSS/JS", Capability: 70, Projects: ["SCSS"] },
   {
-    Skill: "Reactjs",
-    Capability: 70,
-    Projects: ["Styled Components", "Redux", "Hooks", "NextJs"],
+    Skill: "Databases",
+    Frameworks: [
+      {
+        name: "SQL Queries",
+        capability: 80,
+      },
+      {
+        name: "PostgreSQL",
+        capability: 70,
+      },
+      {
+        name: "MySQL",
+        capability: 40,
+      },
+      {
+        name: "MongoDB",
+        capability: 70,
+      },
+    ],
   },
-  { Skill: "Typescript", Capability: 70, Projects: [] },
-  { Skill: "Node/Express", Capability: 70, Projects: [] },
   {
-    Skill: "AWS",
-    Capability: 60,
-    Projects: ["Machine Learning", "Solutions Architect"],
+    Skill: "AWS Cloud Technologies",
+    Frameworks: [
+      {
+        name: "Solutions Architecting",
+        capability: 80,
+      },
+      {
+        name: "Machine Learning (Sagemaker)",
+        capability: 80,
+      },
+    ],
   },
-  { Skill: "SQL", Capability: 60, Projects: [] },
-  { Skill: "SPSS", Capability: 50, Projects: [] },
-  { Skill: "LaTeX", Capability: 70, Projects: [] },
-  { Skill: "Figma/UI-UX", Capability: 50, Projects: ["Project1"] },
-  { Skill: "Databases", Capability: 60, Projects: ["PostgreSQL", "MongoDB"] },
+  {
+    Skill: "UI/UX",
+    Frameworks: [
+      {
+        name: "Figma",
+        capability: 40,
+      },
+    ],
+  },
+  {
+    Skill: "Additional",
+    Frameworks: [
+      {
+        name: "LaTex",
+        capability: 70,
+      },
+      {
+        name: "SPSS",
+        capability: 70,
+      },
+      {
+        name: "MATLAB",
+        capability: 40,
+      },
+      {
+        name: "Docker/Kubernetes",
+        capability: 80,
+      },
+      {
+        name: "Microservices",
+        capability: 80,
+      },
+      {
+        name: "R",
+        capability: 40,
+      },
+    ],
+  },
 ];
 
 export interface VisibleCourseItem {
