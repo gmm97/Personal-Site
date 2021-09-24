@@ -19,16 +19,13 @@ interface capabilityProps {
 }
 
 export const FrameworkWrapper = styled.div<capabilityProps>`
-  color: ${({ capability }) => {
-    if (capability >= 80) {
-      return "#3CB371";
-    } else if (capability >= 50) {
-      return "#FFD700";
-    } else {
-      return "#FF7F50";
-    }
-  }};
+  color: #000;
   margin: 1rem;
+  position: relative;
+  &:hover {
+    color: teal;
+    cursor: pointer;
+  }
   @media only screen and (max-width: 900px) {
     margin: 1rem;
   }

@@ -40,7 +40,7 @@ export const TimelineData: TimelineEntry[] = [
   },
   {
     text: "Attended the advanced machine learning course at Zagreb School of Economics and Management",
-    date: "June - July 2019",
+    date: "Jun - Jul 2019",
     category: {
       tag: TagCategories.Academics,
       color: AcademicTagColor,
@@ -87,7 +87,7 @@ export const TimelineData: TimelineEntry[] = [
     },
   },
   {
-    text: "Worked at Shopee Singapore as a product manager (data)",
+    text: "Worked at Shopee Singapore as a Product Manager (data)",
     date: "Feb - Apr 2021",
     category: {
       tag: TagCategories.Professional,
@@ -103,8 +103,24 @@ export const TimelineData: TimelineEntry[] = [
     },
   },
   {
-    text: "Working at NUS-Singtel Cyber Security R&D Laboratory as a threat intelligence intern",
+    text: "Worked at NUS-Singtel Cyber Security R&D Laboratory as a Threat Intelligence Intern",
     date: "May - Aug 2021",
+    category: {
+      tag: TagCategories.Professional,
+      color: ProfessionalTagColor,
+    },
+  },
+  {
+    text: "Placed on the Dean's List for academic excellence in AY20/21",
+    date: "Aug 2021",
+    category: {
+      tag: TagCategories.Academics,
+      color: AcademicTagColor,
+    },
+  },
+  {
+    text: "Working at TikTok as a Software Engineer (Product Infrastructure) in the e-commerce team",
+    date: "Sep 2021 - Present",
     category: {
       tag: TagCategories.Professional,
       color: ProfessionalTagColor,

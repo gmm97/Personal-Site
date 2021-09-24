@@ -7,9 +7,15 @@ export interface WorkExperienceItem {
 
 export const WorkExperienceData: WorkExperienceItem[] = [
   {
+    Title: "TikTok (ByteDance), e-Commerce Team",
+    Date: "Sep 2021 - Present",
+    Role: "Software Engineer, Product Infrastructure",
+    Details: ["Deployed to the TikTok e-commerce team as a software engineer"],
+  },
+  {
     Title: "Singtel-NUS Worldwide Corporate Research Laboratory",
-    Date: "May 2021 - Present",
-    Role: "Machine Learning Developer / Research Assistant",
+    Date: "May 2021 - Aug 2021",
+    Role: "Machine Learning Developer, Threat Intelligence",
     Details: [
       "Working as part of a research team focusing on attributing Advanced Persistent Threats (APT's) to a specific APT group",
       "Tasked with building machine learning frameworks for feature extraction from unstructured MITRE technique descriptions",
@@ -81,7 +87,7 @@ export const EducationData: EducationItem[] = [
       "Singtel-NTU Book Prize Award for excellence in Electrical Engineering, AY 19/20",
       "Singapore Universities Student Exchange Programme 2020, NUS, CGPA: 5.00/5.00",
       "Minor in Mathematics and Modern Languages (German)",
-      "Dean's List, AY 18/19",
+      "Dean's List, AY 18/19, Dean's List, AY 20/21",
     ],
   },
   {
