@@ -6,7 +6,7 @@ export interface ProjectDescription {
 export const ProjectDescription: ProjectDescription = {
   ProjectPrimarySubHeading: "Academic, Professional and Personal Projects",
   ProjectPrimaryElaboration:
-    "Throughout my academic life, I've taken on many modules that required me to come up with something new, fun and innovative. As a side hustle, I've also spent considerable time on developing those projects after the end of the semester or picked up something entirely new just for fun. I'd be more than happy to share a detailed account of those projects and show some of my works over here. For professional projects, I can elaborate on the project scope, direction and outcome, but I won't be able to provide any code or works due to IP reasons. Nevertheless, if you'd like to learn more, just drop me a message and we can discuss further! Also, I'm adding all the project articles slowly as I go along, so some may not have a description just yet!",
+    "Throughout my academic life, I've always tried to come up with something new, fun and innovative to broaden my horizons. Some of the projects are listed here! A few may not have a description just yet, but I'm working on adding them:",
 };
 
 export interface CarouselContentItem {

@@ -27,5 +27,5 @@ export interface ContactDescription {
 export const ContactDescription: ContactDescription = {
   ContactPrimarySubHeading: "Send me a message",
   ContactPrimaryElaboration:
-    "Feel like dropping me a message? Just select either my personal or work email and key in your message below! If you'd like to translate your email to one of the 3 languages I speak, just select the relevant language below. Anything you type (in basically any known language) will be translated into the target language you have selected!",
+    "Feel like dropping me a message? Translate it into a language I know below:",
 };

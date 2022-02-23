@@ -95,7 +95,7 @@ export const TimelineData: TimelineEntry[] = [
     },
   },
   {
-    text: "Completed a minor in mathematics and a minor in modern languages (german)",
+    text: "Completed a minor in Mathematics and a minor in Modern Languages (German)",
     date: "May 2021",
     category: {
       tag: TagCategories.Academics,
@@ -103,7 +103,7 @@ export const TimelineData: TimelineEntry[] = [
     },
   },
   {
-    text: "Worked at NUS-Singtel Cyber Security R&D Laboratory as a Threat Intelligence Intern",
+    text: "Worked at NUS-Singtel Cyber Security R&D Laboratory as a Software Engineer (Threat Intelligence)",
     date: "May - Aug 2021",
     category: {
       tag: TagCategories.Professional,
@@ -119,8 +119,16 @@ export const TimelineData: TimelineEntry[] = [
     },
   },
   {
-    text: "Working at TikTok as a Software Engineer (Product Infrastructure) in the e-commerce team",
-    date: "Sep 2021 - Present",
+    text: "Worked at TikTok as a Software Engineer (Product Infrastructure) in the e-commerce team",
+    date: "Sep 2021 - Jan 2022",
+    category: {
+      tag: TagCategories.Professional,
+      color: ProfessionalTagColor,
+    },
+  },
+  {
+    text: "Will be joining Facebook as an Enterprise Engineering Intern",
+    date: "May 2022 - Aug 2022",
     category: {
       tag: TagCategories.Professional,
       color: ProfessionalTagColor,

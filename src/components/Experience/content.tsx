@@ -7,20 +7,21 @@ export interface WorkExperienceItem {
 
 export const WorkExperienceData: WorkExperienceItem[] = [
   {
-    Title: "TikTok (ByteDance), e-Commerce Team",
-    Date: "Sep 2021 - Present",
-    Role: "Software Engineer, Product Infrastructure",
-    Details: ["Deployed to the TikTok e-commerce team as a software engineer"],
+    Title: "TikTok (ByteDance)",
+    Date: "Sep 2021 - Jan 2022",
+    Role: "Software Engineer (Product Infrastructure), E-Commerce",
+    Details: [
+      "Developing internal tools and API’s for health tracking of 500+ microservices as part of an agile software development team",
+      "Constructing a signal aggregation platform for deployment across Tiktok using Reactjs, Golang, Bosun and openTSDB. This tool traces dependency chains in microservice deployments and raises alerts to microservice administrators when abnormalities are detected in upstream or downstream microservices. This platform is expected to reduce debugging times for platform engineers by up to 30% and reduce microservice downtime by 6-9 hours annually",
+    ],
   },
   {
     Title: "Singtel-NUS Worldwide Corporate Research Laboratory",
     Date: "May 2021 - Aug 2021",
-    Role: "Machine Learning Developer, Threat Intelligence",
+    Role: "Software Engineer (Machine Learning), Threat Intelligence",
     Details: [
-      "Working as part of a research team focusing on attributing Advanced Persistent Threats (APT's) to a specific APT group",
-      "Tasked with building machine learning frameworks for feature extraction from unstructured MITRE technique descriptions",
-      "Developing a proof-of-concept for training sentence transformer models on unstructured data for multi-label classification tasks",
-      "Working on integrating complex machine learning frameworks for end-to-end inference in a complex framework",
+      "Designed, developed, and deployed machine learning pipelines using spaCy, BERT and LDA for structured feature extraction from 185 MITRE technique and 540 CAPEC attack pattern descriptions",
+      "Designed an algorithm which operates on endpoint detection (EDR) tool logs and produces a threat prioritization score for SOC analysts to review. This algorithm is currently being reviewed for publication by IEEE S&P and USENIX",
     ],
   },
   {
@@ -28,10 +29,8 @@ export const WorkExperienceData: WorkExperienceItem[] = [
     Date: "Feb 2021 - Apr 2021",
     Role: "Technical Product Manager (Data)",
     Details: [
-      "Assigned to a team involved in designing database schemas and database ingestion for real-time data analytics",
-      "Working with developers to reduce query time from Data Warehouses using Apache Druid",
-      "Modifying UI components of internal data systems for improved user interaction",
-      "Using Figma to design the User Interface (UI) for internal tools",
+      "Collaborated with developers to optimize query performance from data warehouses using apache druid. The feature request to rewrite backend SQL queries for vectorized execution reduced dashboard query times by 25% in peak traffic hours",
+      "Designed dashboards accessed by 3,000 employees using Figma, and collaborated with feature development teams to iteratively improve the availability of these dashboards in peak traffic hours",
     ],
   },
   {
@@ -39,10 +38,8 @@ export const WorkExperienceData: WorkExperienceItem[] = [
     Date: "Apr 2020 – Sep 2020",
     Role: "Data Analyst, Risk Advisory Department",
     Details: [
-      "Performed Structural Equation Modelling (SEM) in R to develop a framework for organisational performance",
-      "Published SEM technical manuals and guides for data analysts in Deloitte",
-      "Utilised IBM SPSS for advanced data exploration and mathematical modelling",
-      "Worked independently as a data analyst and reported directly to board members of Deloitte’s multinational clients",
+      "Performed Structural Equation Modelling in R to develop a unified framework for modelling organisational performance in SEA",
+      "Utilized text mining, topic modelling and hierarchical clustering to identify areas for improvement in TTSH’s customer journey, based on the survey results of 30,000 patients. The findings were presented to TTSH’s top management and board of directors",
     ],
   },
   {
@@ -51,9 +48,7 @@ export const WorkExperienceData: WorkExperienceItem[] = [
     Role: "NLP Engineer, Development",
 
     Details: [
-      "Applied learning NLP tools and techniques for entity extraction from complex sentences",
-      "Implemented memory network frameworks for constructing a question-answering chatbot",
-      "Researched on leading techniques in knowledge graph construction and text reduction",
+      "Implemented a dynamic memory network framework for constructing a question-answering chatbot. The MVP produced could parse text documents of 5 pages and answer direct queries by aggregating information from different paragraphs. The model was earmarked for further development and internal deployment by LTA’s system engineering team",
     ],
   },
   {
@@ -61,10 +56,7 @@ export const WorkExperienceData: WorkExperienceItem[] = [
     Date: "Dec 2019 – Jan 2020",
     Role: "Machine Learning Intern, C3 Development",
     Details: [
-      "Spearheaded a project which involves using acoustic speech recognition (ASR) to develop a speech to text NLP model",
-      "Built upon leading research conducted in ASR to reduce labelled data required for self-training an RNN end to end neural network",
-      "Modified dynamic memory networks to perform question-answering tasks on technical manuals",
-      "Performed machine learning across distributed Nvidia DGX servers and proposed a system design which integrated memory network components in the model training process",
+      "Built upon leading research conducted in acoustic speech recognition to implement a self-supervised speech-to-text model. This model reduced the amount of labelled audio data required by 20% while maintaining the model F1 score",
     ],
   },
 ];
@@ -83,19 +75,13 @@ export const EducationData: EducationItem[] = [
       "Renaissance Engineering Programme - Bachelor of Engineering Science (Electrical and Electronic Engineering)",
     Date: "Aug 2018 - Present",
     Details: [
-      "Expected Honours (Highest Distinction), Current CGPA: 4.89/5.00",
-      "Singtel-NTU Book Prize Award for excellence in Electrical Engineering, AY 19/20",
-      "Singapore Universities Student Exchange Programme 2020, NUS, CGPA: 5.00/5.00",
-      "Minor in Mathematics and Modern Languages (German)",
+      "Expected Honours (Highest Distinction), Current CGPA: 4.88/5.00",
       "Dean's List, AY 18/19, Dean's List, AY 20/21",
-    ],
-  },
-  {
-    InstitutionName: "Zagreb School of Economics and Management (ZSEM)",
-    QualificationName: "Summer Exchange Programme",
-    Date: "Jun - Jul 2019",
-    Details: [
-      "Obtained Distinction in the advanced machine learning course at ZSEM",
+      "Completed a Minor in Mathematics and Minor in Modern Languages (German)",
+      "Singapore Universities Student Exchange Programme 2020, NUS, CGPA: 5.00/5.00",
+      "Singtel-NTU Book Prize Award for excellence in Electrical Engineering, AY 19/20",
+      "Achieved ‘Distinction’ in the advanced machine learning course at Zagreb School of Economics and Management (ZSEM)",
+      "Embarked upon an exchange program to Royal Institute of Technology (KTH), Stockholm",
     ],
   },
   {
@@ -155,10 +141,6 @@ export const SkillsContent: SkillsContentItem[] = [
         capability: 70,
       },
       {
-        name: "Data Structures",
-        capability: 80,
-      },
-      {
         name: "Flask/ Django",
         capability: 40,
       },
@@ -197,33 +179,16 @@ export const SkillsContent: SkillsContentItem[] = [
     Skill: "Databases",
     Frameworks: [
       {
-        name: "SQL Queries",
-        capability: 80,
-      },
-      {
-        name: "PostgreSQL",
+        name: "PostgreSQL (SQL)",
         capability: 70,
       },
       {
-        name: "MySQL",
+        name: "MySQL (SQL)",
         capability: 40,
       },
       {
-        name: "MongoDB",
+        name: "MongoDB (NoSQL)",
         capability: 70,
-      },
-    ],
-  },
-  {
-    Skill: "AWS Cloud Technologies",
-    Frameworks: [
-      {
-        name: "Solutions Architecting",
-        capability: 80,
-      },
-      {
-        name: "Machine Learning (Sagemaker)",
-        capability: 80,
       },
     ],
   },
@@ -240,6 +205,10 @@ export const SkillsContent: SkillsContentItem[] = [
     Skill: "Additional",
     Frameworks: [
       {
+        name: "GoLang",
+        capability: 90,
+      },
+      {
         name: "LaTex",
         capability: 70,
       },
@@ -253,10 +222,6 @@ export const SkillsContent: SkillsContentItem[] = [
       },
       {
         name: "Docker/Kubernetes",
-        capability: 80,
-      },
-      {
-        name: "Microservices",
         capability: 80,
       },
       {
