@@ -3,7 +3,7 @@ import { Link as LinkS } from "react-scroll";
 import ProfilePic from "../../images/ProfilePic.jpg";
 
 export const SidebarNavContainer = styled.div`
-  width: 12rem;
+  width: 15rem;
   flex-shrink: 0;
   display: flex;
   flex-direction: column;

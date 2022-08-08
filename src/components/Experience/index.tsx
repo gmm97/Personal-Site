@@ -61,7 +61,7 @@ const Experience = React.forwardRef<HTMLDivElement, ExperienceProps>(
           >
             Experience
           </SubsectionLink>
-          <SubsectionLink
+          {/* <SubsectionLink
             to="skills"
             smooth={true}
             duration={500}
@@ -69,7 +69,7 @@ const Experience = React.forwardRef<HTMLDivElement, ExperienceProps>(
             offset={window.innerWidth > 900 ? -16 : -96}
           >
             Skills
-          </SubsectionLink>
+          </SubsectionLink> */}
           <SubsectionLink
             to="courses"
             smooth={true}
@@ -98,13 +98,13 @@ const Experience = React.forwardRef<HTMLDivElement, ExperienceProps>(
             <ResumeSectionHeader>Experience</ResumeSectionHeader>
             <WorkResumeSection WorkExperienceData={WorkExperienceData} />
           </MainSection>
-          <MainSection id="skills">
+          {/* <MainSection id="skills">
             <ResumeSectionHeader>Skills</ResumeSectionHeader>
             <SkillsResumeSection
               SkillsContent={SkillsContent}
               SkillsDescription={SkillsDescription}
             />
-          </MainSection>
+          </MainSection> */}
           <MainSection id="courses">
             <ResumeSectionHeader>Courses</ResumeSectionHeader>
             <CourseSection

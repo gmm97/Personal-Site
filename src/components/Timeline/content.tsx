@@ -127,8 +127,24 @@ export const TimelineData: TimelineEntry[] = [
     },
   },
   {
-    text: "Will be joining Facebook as an Enterprise Engineering Intern",
+    text: "Travelled to KTH Royal Institute, Stockholm, for an exchange semester",
+    date: "Jan 2022 - May 2022",
+    category: {
+      tag: TagCategories.Academics,
+      color: AcademicTagColor,
+    },
+  },
+  {
+    text: "Worked at Meta as an Enterprise (Internal Software) Engineer ",
     date: "May 2022 - Aug 2022",
+    category: {
+      tag: TagCategories.Professional,
+      color: ProfessionalTagColor,
+    },
+  },
+  {
+    text: "Working at Singularity Data as a Software Engineer ",
+    date: "Aug 2022 - Present",
     category: {
       tag: TagCategories.Professional,
       color: ProfessionalTagColor,

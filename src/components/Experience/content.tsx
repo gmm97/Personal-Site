@@ -7,12 +7,29 @@ export interface WorkExperienceItem {
 
 export const WorkExperienceData: WorkExperienceItem[] = [
   {
+    Title: "Singularity Data",
+    Date: "Aug 2022 - Present",
+    Role: "Software Engineer (Database Kernel)",
+    Details: [
+      "Deployed to the database kernel team to work on the development of the RisingWave streaming database"
+    ],
+  },
+  {
+    Title: "Facebook (Meta)",
+    Date: "May 2022 - Aug 2022",
+    Role: "Enterprise (Internal Software) Engineer - Access Management",
+    Details: [
+      "Created an internal database cronjob tool (datafix) for enterprise centre using React, Typescript, GraphQL, Relay and Hack. This tool interfaces with 15+ department’s SQL databases to run scheduled jobs required for business, development or audit purposes",
+      "Implemented user event flow logging and application performance logging in datafix to understand and remedy application bottlenecks. Relay query preloading, for example, reduced initial page load latency from 1.3s to 700ms (p99) in production",
+      "Spearheaded the user testing, access migration and staged rollout of the aforementioned tool to 300+ daily enterprise centre users"
+    ],
+  },
+  {
     Title: "TikTok (ByteDance)",
     Date: "Sep 2021 - Jan 2022",
     Role: "Software Engineer (Product Infrastructure), E-Commerce",
     Details: [
-      "Developing internal tools and API’s for health tracking of 500+ microservices as part of an agile software development team",
-      "Constructing a signal aggregation platform for deployment across Tiktok using Reactjs, Golang, Bosun and openTSDB. This tool traces dependency chains in microservice deployments and raises alerts to microservice administrators when abnormalities are detected in upstream or downstream microservices. This platform is expected to reduce debugging times for platform engineers by up to 30% and reduce microservice downtime by 6-9 hours annually",
+      "Developed a signal aggregation platform for deployment across TikTok using React, Golang, Bosun and openTSDB. This tool traces dependency chains in microservice deployments and raises alerts to microservice administrators when abnormalities are detected in upstream or downstream microservices. This platform is expected to reduce debugging times for platform engineers by up to 30%"
     ],
   },
   {
@@ -172,32 +189,6 @@ export const SkillsContent: SkillsContentItem[] = [
       {
         name: "Typescript",
         capability: 80,
-      },
-    ],
-  },
-  {
-    Skill: "Databases",
-    Frameworks: [
-      {
-        name: "PostgreSQL (SQL)",
-        capability: 70,
-      },
-      {
-        name: "MySQL (SQL)",
-        capability: 40,
-      },
-      {
-        name: "MongoDB (NoSQL)",
-        capability: 70,
-      },
-    ],
-  },
-  {
-    Skill: "UI/UX",
-    Frameworks: [
-      {
-        name: "Figma",
-        capability: 40,
       },
     ],
   },
