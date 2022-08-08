@@ -2,7 +2,6 @@ import React, { Suspense, lazy } from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import GlobalStyle from "./globalstyles/globalstyles";
-import ScrollRestoration from "react-scroll-restoration";
 import Spinner from "./components/ReusableComponents/LoadingSpinner";
 
 const ProjectNavigation = lazy(() => import("./pages/ProjectDescriptionPages"));
@@ -12,7 +11,6 @@ function App() {
     <React.Fragment>
       <GlobalStyle />
       <BrowserRouter>
-        <ScrollRestoration />
         <Suspense fallback={<Spinner />}>
           <Switch>
             <Route path="/" exact component={Home} />
