@@ -151,6 +151,14 @@ export const TimelineData: TimelineEntry[] = [
     },
   },
   {
+    text: "Graduated from Nanyang Technological University",
+    date: "Dec 2022",
+    category: {
+      tag: TagCategories.Academics,
+      color: AcademicTagColor,
+    },
+  },
+  {
     text: "Worked at WorldQuant as a Quantitative Researcher Intern",
     date: "Jan 2023 - Apr 2023",
     category: {

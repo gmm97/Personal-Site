@@ -1,12 +1,12 @@
-import React, { useState, useRef, useEffect } from "react";
-import { AiFillCaretDown } from "react-icons/ai";
-import { DropdownOptions } from "./DropdownOptions";
+import React, { useState, useRef, useEffect, Fragment } from 'react';
+import { AiFillCaretDown } from 'react-icons/ai';
+import { DropdownOptions } from './DropdownOptions';
 import {
   DropdownContainer,
   DropdownHeader,
   DropdownList,
   ListItem,
-} from "./styles";
+} from './styles';
 
 interface DropdownComponentProps {
   currentOption: string;
@@ -22,7 +22,7 @@ export const DropdownComponent = (props: DropdownComponentProps) => {
   };
 
   useEffect(() => {
-    document.body.addEventListener("click", (event: MouseEvent) => {
+    document.body.addEventListener('click', (event: MouseEvent) => {
       if (ref === null || ref.current === null) {
         return;
       }
@@ -41,8 +41,12 @@ export const DropdownComponent = (props: DropdownComponentProps) => {
     <DropdownContainer ref={ref}>
       <DropdownHeader onClick={toggleOpen}>
         {props.currentOption
-          ? DropdownOptions.filter(({optionText}) => optionText === props.currentOption)
-          : "All"}
+          ? DropdownOptions.filter(
+            ({ optionText }) => optionText === props.currentOption
+          ).map((option) => (
+            <Fragment key={option.optionText}>{option.optionText}</Fragment>
+          ))
+          : 'All'}
         <AiFillCaretDown />
       </DropdownHeader>
       <DropdownList isOpen={isOpen}>

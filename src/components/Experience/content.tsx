@@ -7,17 +7,34 @@ export interface WorkExperienceItem {
 
 export const WorkExperienceData: WorkExperienceItem[] = [
   {
-    Title: "Singularity Data",
-    Date: "Aug 2022 - Present",
-    Role: "Software Engineer (Database Kernel)",
+    Title: "Open Government Products",
+    Date: "Jun 2023 - Present",
+    Role: "Software Engineer",
     Details: [
-      "Deployed to the database kernel team to work on the development of the RisingWave streaming database"
+      "Working with SCDF to develop a tool for inventory management",
+    ],
+  },
+  {
+    Title: "WorldQuant",
+    Date: "Jan 2023 - Apr 2023",
+    Role: "Quantitative Researcher Intern",
+    Details: [
+      "Worked with software engineers and other quantitative researchers to find Alphas and develop a reliable asset pricing model",
+    ],
+  },
+  {
+    Title: "Singularity Data",
+    Date: "Aug 2022 - Nov 2022",
+    Role: "Software Engineer (Database Kernel) Intern",
+    Details: [
+      "Deployed to the database kernel team to work on the development of the RisingWave streaming database",
+      'Worked on benchmarking and load-testing the RisingWave database'
     ],
   },
   {
     Title: "Facebook (Meta)",
     Date: "May 2022 - Aug 2022",
-    Role: "Enterprise (Internal Software) Engineer - Access Management",
+    Role: "Enterprise (Internal Software) Engineer Intern - Access Management",
     Details: [
       "Created an internal database cronjob tool (datafix) for enterprise centre using React, Typescript, GraphQL, Relay and Hack. This tool interfaces with 15+ department’s SQL databases to run scheduled jobs required for business, development or audit purposes",
       "Implemented user event flow logging and application performance logging in datafix to understand and remedy application bottlenecks. Relay query preloading, for example, reduced initial page load latency from 1.3s to 700ms (p99) in production",
@@ -27,7 +44,7 @@ export const WorkExperienceData: WorkExperienceItem[] = [
   {
     Title: "TikTok (ByteDance)",
     Date: "Sep 2021 - Jan 2022",
-    Role: "Software Engineer (Product Infrastructure), E-Commerce",
+    Role: "Software Engineer (Product Infrastructure) Intern, E-Commerce",
     Details: [
       "Developed a signal aggregation platform for deployment across TikTok using React, Golang, Bosun and openTSDB. This tool traces dependency chains in microservice deployments and raises alerts to microservice administrators when abnormalities are detected in upstream or downstream microservices. This platform is expected to reduce debugging times for platform engineers by up to 30%"
     ],
@@ -35,7 +52,7 @@ export const WorkExperienceData: WorkExperienceItem[] = [
   {
     Title: "Singtel-NUS Worldwide Corporate Research Laboratory",
     Date: "May 2021 - Aug 2021",
-    Role: "Software Engineer (Machine Learning), Threat Intelligence",
+    Role: "Software Engineer (Machine Learning) Intern, Threat Intelligence",
     Details: [
       "Designed, developed, and deployed machine learning pipelines using spaCy, BERT and LDA for structured feature extraction from 185 MITRE technique and 540 CAPEC attack pattern descriptions",
       "Designed an algorithm which operates on endpoint detection (EDR) tool logs and produces a threat prioritization score for SOC analysts to review. This algorithm is currently being reviewed for publication by IEEE S&P and USENIX",
@@ -44,7 +61,7 @@ export const WorkExperienceData: WorkExperienceItem[] = [
   {
     Title: "Shopee Singapore",
     Date: "Feb 2021 - Apr 2021",
-    Role: "Technical Product Manager (Data)",
+    Role: "Technical Product Manager (Data) Intern",
     Details: [
       "Collaborated with developers to optimize query performance from data warehouses using apache druid. The feature request to rewrite backend SQL queries for vectorized execution reduced dashboard query times by 25% in peak traffic hours",
       "Designed dashboards accessed by 3,000 employees using Figma, and collaborated with feature development teams to iteratively improve the availability of these dashboards in peak traffic hours",
@@ -53,7 +70,7 @@ export const WorkExperienceData: WorkExperienceItem[] = [
   {
     Title: "Deloitte Global",
     Date: "Apr 2020 – Sep 2020",
-    Role: "Data Analyst, Risk Advisory Department",
+    Role: "Data Analyst Intern, Risk Advisory Department",
     Details: [
       "Performed Structural Equation Modelling in R to develop a unified framework for modelling organisational performance in SEA",
       "Utilized text mining, topic modelling and hierarchical clustering to identify areas for improvement in TTSH’s customer journey, based on the survey results of 30,000 patients. The findings were presented to TTSH’s top management and board of directors",
@@ -62,7 +79,7 @@ export const WorkExperienceData: WorkExperienceItem[] = [
   {
     Title: "Land Transport Authority",
     Date: "May 2020 – Aug 2020",
-    Role: "NLP Engineer, Development",
+    Role: "NLP Engineer Intern, Development",
 
     Details: [
       "Implemented a dynamic memory network framework for constructing a question-answering chatbot. The MVP produced could parse text documents of 5 pages and answer direct queries by aggregating information from different paragraphs. The model was earmarked for further development and internal deployment by LTA’s system engineering team",
@@ -90,9 +107,9 @@ export const EducationData: EducationItem[] = [
     InstitutionName: "Nanyang Technological University, Singapore",
     QualificationName:
       "Renaissance Engineering Programme - Bachelor of Engineering Science (Electrical and Electronic Engineering)",
-    Date: "Aug 2018 - Present",
+    Date: "Aug 2018 - Dec 2022",
     Details: [
-      "Expected Honours (Highest Distinction), Current CGPA: 4.88/5.00",
+      "cGPA: 4.88/5.00",
       "Dean's List, AY 18/19, Dean's List, AY 20/21",
       "Completed a Minor in Mathematics and Minor in Modern Languages (German)",
       "Singapore Universities Student Exchange Programme 2020, NUS, CGPA: 5.00/5.00",
@@ -123,7 +140,7 @@ export const ActivitiesData: ActivitiesItem[] = [
   {
     ClubName: "Business Solutions",
     PositionName: "Research Director, Training Department",
-    Date: "Aug 2018 - Present",
+    Date: "Aug 2018 - Dec 2022",
     Details: [
       "Led training of junior associates in a 12-week intensive management consulting training program ",
       "Acted as International Relations Officer for UNSW in the Asian Business Case Competition (ABCC) 2018",
