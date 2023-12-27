@@ -1,5 +1,5 @@
 import React from "react";
-import { CarouselContent, CarouselContentItem } from "./content";
+import { CarouselContentItem } from "./content";
 import {
   CarouselItemWrapper,
   CarouselImage,

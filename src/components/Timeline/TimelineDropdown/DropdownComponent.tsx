@@ -41,13 +41,7 @@ export const DropdownComponent = (props: DropdownComponentProps) => {
     <DropdownContainer ref={ref}>
       <DropdownHeader onClick={toggleOpen}>
         {props.currentOption
-          ? DropdownOptions.filter((option) => {
-              if (option.optionText === props.currentOption) {
-                return <React.Fragment>{option.optionText}</React.Fragment>;
-              }
-            }).map((option) => {
-              return option.optionText;
-            })
+          ? DropdownOptions.filter(({optionText}) => optionText === props.currentOption)
           : "All"}
         <AiFillCaretDown />
       </DropdownHeader>

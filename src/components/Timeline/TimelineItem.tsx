@@ -8,11 +8,11 @@ import {
 } from "./TimelineItemStyles";
 import { TimelineEntry } from "./content";
 
-interface TimelineItem {
+interface TimelineItemProps {
   TimelineEntry: TimelineEntry;
 }
 
-export const TimelineItem = (props: TimelineItem) => {
+export const TimelineItem = (props: TimelineItemProps) => {
   const { text, date, category } = props.TimelineEntry;
   const [fillSolid, setFillSolid] = useState<boolean>(false);
   const fillElementSolid = (fillSolid: boolean): void => {

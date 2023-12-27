@@ -4,7 +4,7 @@ import { IconContext } from "react-icons";
 import { AiOutlineHome } from "react-icons/ai";
 import { BiPencil, BiPhoneCall, BiGitRepoForked } from "react-icons/bi";
 import { ProgressBar } from "../ProgressBar";
-import { DesktopNavBarDescription } from "./content";
+import { DesktopNavBarDescriptionSection } from "./content";
 import {
   SidebarNavContainer,
   ProfileImage,
@@ -23,7 +23,7 @@ import {
 } from "./styles";
 
 interface NavBarProps {
-  DesktopNavBarDescription: DesktopNavBarDescription;
+  DesktopNavBarDescription: DesktopNavBarDescriptionSection
 }
 
 export const NavBar = (props: NavBarProps) => {

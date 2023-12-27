@@ -1,9 +1,9 @@
 import React from "react";
 import { ContactMethodsWrapper, ContactMethod } from "./ContactMethodStyles";
-import { ContactInformation } from "./content";
+import { ContactInformation, ContactInformationSection } from "./content";
 
 interface ContactMethodsProps {
-  ContactInformation: ContactInformation;
+  ContactInformation: ContactInformationSection;
   changeEmail: (value: string) => void;
   selectedEmail: String;
 }

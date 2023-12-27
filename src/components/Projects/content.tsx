@@ -1,9 +1,9 @@
-export interface ProjectDescription {
+export interface ProjectDescriptionSection {
   ProjectPrimarySubHeading: string;
   ProjectPrimaryElaboration: string;
 }
 
-export const ProjectDescription: ProjectDescription = {
+export const ProjectDescription: ProjectDescriptionSection = {
   ProjectPrimarySubHeading: "Academic, Professional and Personal Projects",
   ProjectPrimaryElaboration:
     "Throughout my academic life, I've always tried to come up with something new, fun and innovative to broaden my horizons. Some of the projects are listed here! A few may not have a description just yet, but I'm working on adding them:",

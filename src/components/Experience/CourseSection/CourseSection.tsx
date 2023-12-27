@@ -13,13 +13,13 @@ import {
   SectionSubHeading,
   SectionElaboration,
 } from "../../ReusableComponents/styles";
-import { CourseDescription } from "./content";
+import { CourseDescriptionSection } from "./content";
 import { VisibleCourseItem } from "../content";
 
 interface CourseSectionProps {
   VisibleCourseData: VisibleCourseItem[];
   AllCoursesData: VisibleCourseItem[];
-  CourseDescription: CourseDescription;
+  CourseDescription: CourseDescriptionSection;
 }
 
 export const CourseSection = (props: CourseSectionProps) => {

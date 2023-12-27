@@ -7,12 +7,12 @@ import {
   SectionElaboration,
 } from "../ReusableComponents/styles";
 import { useScrollPast } from "../ReusableComponents/useScrollPast";
-import { AboutDescription } from "../../components/About/content";
+import { AboutDescriptionSection } from "../../components/About/content";
 
 import { TimelineContainer } from "../Timeline/TimelineContainer";
 
 interface AboutProps {
-  AboutDescription: AboutDescription;
+  AboutDescription: AboutDescriptionSection;
   height: number;
 }
 

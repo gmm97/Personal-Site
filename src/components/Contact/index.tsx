@@ -11,16 +11,16 @@ import { ContactMethods } from "./ContactMethods";
 import { SendMessageContainer } from "./SendMessage";
 import { Languages } from "./Languages";
 import {
-  ContactInformation,
-  TranslatedLanguages,
-  ContactDescription,
+  ContactInformationSection,
+  TranslatedLanguagesSection,
+  ContactDescriptionSection,
 } from "./content";
 
 interface ContactProps {
-  ContactInformation: ContactInformation;
-  TranslatedLanguages: TranslatedLanguages;
+  ContactInformation: ContactInformationSection;
+  TranslatedLanguages: TranslatedLanguagesSection;
   height: number;
-  ContactDescription: ContactDescription;
+  ContactDescription: ContactDescriptionSection;
 }
 
 const Contact = React.forwardRef<HTMLDivElement, ContactProps>((props, ref) => {

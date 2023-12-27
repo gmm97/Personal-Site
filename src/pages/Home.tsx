@@ -84,7 +84,7 @@ const Home = () => {
     }, [node]);
 
     useResizeObserver(target, (entry) => {
-      refArray.map((ref, index) => {
+      refArray.forEach((ref) => {
         recomputeTopHeights(ref);
       });
       recomputeBottomHeights(refArray[refArray.length - 1]);

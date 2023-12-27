@@ -16,7 +16,6 @@ import {
 import { useScrollPast } from "../ReusableComponents/useScrollPast";
 
 import { WorkResumeSection } from "./WorkSection/WorkResumeSection";
-import { SkillsResumeSection } from "./SkillsSection";
 import { ActivitiesResumeSection } from "./ActivitiesSection/ActivitiesResumeSection";
 import { CourseSection } from "./CourseSection/CourseSection";
 import {
@@ -24,11 +23,9 @@ import {
   AllCoursesData,
   ActivitiesData,
   EducationData,
-  SkillsContent,
   WorkExperienceData,
 } from "./content";
 import { CourseDescription } from "./CourseSection/content";
-import { SkillsDescription } from "./SkillsSection/content";
 
 interface ExperienceProps {
   height: number;
@@ -61,15 +58,6 @@ const Experience = React.forwardRef<HTMLDivElement, ExperienceProps>(
           >
             Experience
           </SubsectionLink>
-          {/* <SubsectionLink
-            to="skills"
-            smooth={true}
-            duration={500}
-            spy={true}
-            offset={window.innerWidth > 900 ? -16 : -96}
-          >
-            Skills
-          </SubsectionLink> */}
           <SubsectionLink
             to="courses"
             smooth={true}
@@ -98,13 +86,6 @@ const Experience = React.forwardRef<HTMLDivElement, ExperienceProps>(
             <ResumeSectionHeader>Experience</ResumeSectionHeader>
             <WorkResumeSection WorkExperienceData={WorkExperienceData} />
           </MainSection>
-          {/* <MainSection id="skills">
-            <ResumeSectionHeader>Skills</ResumeSectionHeader>
-            <SkillsResumeSection
-              SkillsContent={SkillsContent}
-              SkillsDescription={SkillsDescription}
-            />
-          </MainSection> */}
           <MainSection id="courses">
             <ResumeSectionHeader>Courses</ResumeSectionHeader>
             <CourseSection

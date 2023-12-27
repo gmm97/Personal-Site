@@ -7,10 +7,10 @@ import {
 } from "../ReusableComponents/styles";
 import { useScrollPast } from "../ReusableComponents/useScrollPast";
 import { CarouselComponent } from "./CustomCarousel";
-import { ProjectDescription, CarouselContentItem } from "./content";
+import { CarouselContentItem, ProjectDescriptionSection } from "./content";
 
 interface ProjectProps {
-  ProjectDescription: ProjectDescription;
+  ProjectDescription: ProjectDescriptionSection;
   height: number;
   CarouselContent: CarouselContentItem[];
 }

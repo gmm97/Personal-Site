@@ -1,8 +1,8 @@
-export interface DropdownOptions {
+interface DropdownOptionsType {
   optionId: number;
   optionText: string;
 }
-export const DropdownOptions: DropdownOptions[] = [
+export const DropdownOptions: DropdownOptionsType[] = [
   {
     optionId: 1,
     optionText: "All",

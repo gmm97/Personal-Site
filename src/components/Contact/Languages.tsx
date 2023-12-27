@@ -1,8 +1,8 @@
-import { TranslatedLanguages } from "./content";
+import { TranslatedLanguages, TranslatedLanguagesSection } from "./content";
 import { LanguageWrapper, LanguageComponent } from "./LanguagesStyles";
 
 interface LanguageProps {
-  TranslatedLanguages: TranslatedLanguages;
+  TranslatedLanguages: TranslatedLanguagesSection;
   selectedLanguage: String;
   setSelectedLanguage: (value: String) => void;
 }

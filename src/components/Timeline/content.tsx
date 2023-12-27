@@ -1,11 +1,11 @@
 const AcademicTagColor: string = "#E8E8E8";
 const ProfessionalTagColor: string = "#fadfda";
 
-interface TagCategories {
+interface TagCategoriesSection {
   [key: string]: string;
 }
 
-const TagCategories: TagCategories = {
+const TagCategories: TagCategoriesSection = {
   Academics: "Academics",
   Professional: "Professional",
 };
@@ -17,7 +17,7 @@ export interface TimelineEntry {
 }
 
 interface Category {
-  tag: TagCategories[keyof TagCategories];
+  tag: TagCategoriesSection[keyof TagCategoriesSection];
   color: typeof AcademicTagColor;
 }
 
@@ -135,7 +135,7 @@ export const TimelineData: TimelineEntry[] = [
     },
   },
   {
-    text: "Worked at Meta as an Enterprise (Internal Software) Engineer ",
+    text: "Worked at Meta as an Enterprise (Internal Software) Engineer Intern",
     date: "May 2022 - Aug 2022",
     category: {
       tag: TagCategories.Professional,
@@ -143,8 +143,24 @@ export const TimelineData: TimelineEntry[] = [
     },
   },
   {
-    text: "Working at Singularity Data as a Software Engineer ",
-    date: "Aug 2022 - Present",
+    text: "Worked at Singularity Data as a Software Engineer Intern",
+    date: "Aug 2022 - Nov 2022",
+    category: {
+      tag: TagCategories.Professional,
+      color: ProfessionalTagColor,
+    },
+  },
+  {
+    text: "Worked at WorldQuant as a Quantitative Researcher Intern",
+    date: "Jan 2023 - Apr 2023",
+    category: {
+      tag: TagCategories.Professional,
+      color: ProfessionalTagColor,
+    },
+  },
+  {
+    text: "Working at Open Government Products as a Software Engineer",
+    date: "Jun 2023 - Present",
     category: {
       tag: TagCategories.Professional,
       color: ProfessionalTagColor,
